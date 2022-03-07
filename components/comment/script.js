@@ -5,7 +5,7 @@ const Utterances = () => {
     <section
       ref={(elem) => {
         if (!elem) {
-          null
+          return null
         }
         const scriptElem = document.createElement('script')
         scriptElem.src = 'https://utteranc.es/client.js'
