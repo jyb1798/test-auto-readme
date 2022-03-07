@@ -4,9 +4,9 @@ const Utterances = () => {
   return (
     <section
       ref={(elem) => {
-        if (!elem) {
-          return
-        }
+        // if (!elem) {
+        //   return
+        // }
         const scriptElem = document.createElement('script')
         scriptElem.src = 'https://utteranc.es/client.js'
         scriptElem.async = true
