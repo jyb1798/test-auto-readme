@@ -1,22 +1,23 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 
 const Utterances = () => {
+  const commentDiv = useRef(null)
+
+  useEffect(() => {
+    const script = document.createElement('script')
+    script.src = 'https://utteranc.es/client.js'
+    script.setAttribute('repo', 'Fetudy/Fetudy_Blog')
+    script.setAttribute('issue-term', 'title')
+    script.setAttribute('theme', 'github-light')
+    script.crossOrigin = 'anonymous'
+    script.async = true
+    commentDiv.current.appendChild(script)
+  }, [])
+
   return (
-    <section
-      ref={(elem) => {
-        if (!elem) {
-          return null
-        }
-        const scriptElem = document.createElement('script')
-        scriptElem.src = 'https://utteranc.es/client.js'
-        scriptElem.async = true
-        scriptElem.setAttribute('repo', 'Fetudy/Fetudy_Blog')
-        scriptElem.setAttribute('issue-term', 'title')
-        scriptElem.setAttribute('theme', 'github-light')
-        scriptElem.crossOrigin = 'anonymous'
-        elem.appendChild(scriptElem)
-      }}
-    />
+    <>
+      <div ref={commentDiv}></div>
+    </>
   )
 }
 
