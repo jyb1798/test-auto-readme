@@ -10,6 +10,7 @@
     "@tailwindcss/typography": "^0.4.0",
     "date-fns": "^2.19.0",
     "gray-matter": "4.0.3",
+    "highlight.js": "^11.4.0",
     "ioredis": "^4.27.1",
     "nanoid": "^3.1.22",
     "next": "^10.2.3",
