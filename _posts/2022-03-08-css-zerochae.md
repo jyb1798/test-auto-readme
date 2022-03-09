@@ -12,8 +12,8 @@ CSS의 발전 순서는 다음과 같다.
 
 1. CSS
 2. CSS in CSS
-  - CSS Pre-processor(SASS)
-  - CSS Module
+     - CSS Pre-processor(SASS)
+     - CSS Module
 3. CSS in JS(Styled-Component)
 
 각 단계마다 전 단계의 문제점을 개선하기 위해 다음 단계의 CSS가 출시되었다.
@@ -46,6 +46,7 @@ CSS의 의도는 최소한의 코드로 반복적인 서식을 피하기 위함�
 
 CSS의 우선순위 문제는 상당히 복잡하다. CSS 셀렉터마다 고유한 Level과 포인트가 존재하고 그 총 합을 통해 우선순위가 결정되며 같은 우선순위라면 CSS가 나중에 적용되는 순서대로 덮어쓰도록 되어 있다.
 
+<!-- 
 | 종류         | 점수                         |
 | ------------ | ---------------------------- |
 | !important   | 무한대                       |
@@ -54,7 +55,47 @@ CSS의 우선순위 문제는 상당히 복잡하다. CSS 셀렉터마다 고유
 | 클래스선택자 | 10점                         |
 | 태그 선택자  | 1점                          |
 | 전체 선택자  | 0점                          |
-| 상속         | 항상 우선하지 않음. 점수없음 |
+| 상속         | 항상 우선하지 않음. 점수없음 | 
+
+-->
+
+
+<table>
+  <tbody style="text-align:center">
+    <tr>
+      <th>종류</th>
+      <th>점수</th>
+    </tr>
+    <tr>
+      <td>!important</td>
+      <td>무한대</td>
+    </tr>
+    <tr>
+      <td>인라인 선언</td>
+      <td>1000점</td>
+    </tr>
+    <tr>
+      <td>id선택자</td>
+      <td>100점</td>
+    </tr>
+    <tr>
+      <td>class선택자</td>
+      <td>100점</td>
+    </tr>
+    <tr>
+      <td>tag선택자</td>
+      <td>1점</td>
+    </tr>
+    <tr>
+      <td>전체선택자</td>
+      <td>0점</td>
+    </tr>
+    <tr>
+      <td>상속</td>
+      <td>항상 우선하지 않음. 점수없음</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Isolation
 
