@@ -11,16 +11,22 @@ import hljs from 'highlight.js'
 import 'highlight.js/styles/atom-one-dark.css'
 
 import javascript from 'highlight.js/lib/languages/javascript'
+import typescript from 'highlight.js/lib/languages/typescript'
+import html from 'highlight.js/lib/languages/xml'
 import scss from 'highlight.js/lib/languages/scss'
 import sass from 'highlight.js/lib/languages/scss'
 import css from 'highlight.js/lib/languages/css'
+import json from 'highlight.js/lib/languages/json'
 
 import { useEffect } from 'react'
 
 hljs.registerLanguage('js', javascript)
+hljs.registerLanguage('html', html)
 hljs.registerLanguage('scss', scss)
 hljs.registerLanguage('sass', sass)
 hljs.registerLanguage('css', css)
+hljs.registerLanguage('ts', typescript)
+hljs.registerLanguage('json', json)
 
 export default function PostPage({ post }) {
   const router = useRouter()
