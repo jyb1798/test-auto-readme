@@ -7,8 +7,27 @@ import { getAllPosts, getPostBySlug } from '../../lib/getPost'
 import markdownToHtml from '../../lib/markdownToHtml'
 import Head from 'next/head'
 
+import hljs from 'highlight.js'
+import 'highlight.js/styles/atom-one-dark.css'
+
+import javascript from 'highlight.js/lib/languages/javascript'
+import scss from 'highlight.js/lib/languages/scss'
+import sass from 'highlight.js/lib/languages/scss'
+import css from 'highlight.js/lib/languages/css'
+
+import { useEffect } from 'react'
+
+hljs.registerLanguage('js', javascript)
+hljs.registerLanguage('scss', scss)
+hljs.registerLanguage('sass', sass)
+hljs.registerLanguage('css', css)
+
 export default function PostPage({ post }) {
   const router = useRouter()
+
+  useEffect(() => {
+    hljs.highlightAll()
+  }, [])
 
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
