@@ -1,18 +1,18 @@
 ---
-title: JavaScript vs ECMAScript
+title: JavaScript && ECMAScript
 date: 2022-03-10 18:50
-description: JavaScript vs ECMAScript
+description: JavaScript && ECMAScript
 category: JavaScript
 tags: [front-end, JS]
 ---
 
-> JavaScript와 ECMAScript의 차이
+> JavaScript와 ECMAScript의 관계
 
 ## JavaScript
 
 ### JavaScript의 탄생
 
-1995년, 넷스케이프 커뮤니케이션즈에서 웹페이지의 보조적인 기능을 수행하기 위해 브라우저에서 동작하는 경량 프로그래밍 언어를 도입하기로 결정하고 개발한 것이 자바스크립트.
+1995년, 넷스케이프 커뮤니케이션즈에서 웹페이지의 보조적인 기능을 수행하기 위해 브라우저에서 동작하는 경량 프로그래밍 언어를 도입하기로 결정하고 개발한 것이 자바스크립트이다.
 
 현재 모든 브라우저의 표준 프로그래밍 언어로 자리잡았다.
 
@@ -62,10 +62,19 @@ Node.js의 등장으로 JS는 브라우저를 벗어나 서버 사이드 애플�
 
 Angular, React, Vue.js, Svelte 등 다양한 프레임워크/라이브러리 등장
 
-## JS와 ECMAScript
+## JS 그리고 ECMAScript
 
 ECMAScript는 JS의 표준사양인 ECMA-262를 말하며, 프로그래밍 언어의 값, 타입, 객체와 property, 함수, 표준 빌트인 객체 등 핵심 문법을 규정한다. 각 브라우저의 제조사는 ECMAScript 사양을 준수해서 브라우저에 내장되는 JS 엔진을 구현.
 
 JS는 일반적으로 프로그래밍 언어로서 기본 뼈대를 이루는 ECMAScript와 브라우저가 별도 지원하는 클라이언트 사이드 Web API, 즉 DOM, BOM, Canvas, XMLHttpRequest, fetch, requestAnimationFrame, SVG, Web Storage, Web Component, Web Worker 등을 아우르는 개념.
 
 ![](https://media.vlpt.us/images/yeonbee/post/46731250-f07d-4f31-b432-03a4cee5468e/081f26fe7380c74fc9b163052490229e.gif)
+
+<hr />
+
+## Summary
+
+> JavaScript와 ECMAScript의 관계를 요약해보자
+
+1. ECMAScript는 ECMA 인터내셔널이라는 기구에 의해 정의된 일종의 프로그래밍 맞춤법이다.
+2. JS는 ECMAScript 사양을 준수하는 범용 스크립팅 언어이다.
