@@ -12,6 +12,7 @@
     "date-fns": "^2.19.0",
     "env-cmd": "^10.1.0",
     "gray-matter": "4.0.3",
+    "highlight.js": "^11.4.0",
     "ioredis": "^4.27.1",
     "nanoid": "^3.1.22",
     "next": "^10.2.3",
